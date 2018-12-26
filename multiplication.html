@@ -1,0 +1,42 @@
+<html>
+<head>
+	<style>
+		.button{background-color: PowderBlue;border-color: blue;}
+		.dv{border-style: double; border-color:blue;background-color: pink; margin:150 auto; width: 400px; text-align: center; }
+		.text{background-color: powderblue; margin-top: 15px;height: 20px;	 width : 200px; }
+	</style>
+</head>
+<body>
+	<div class="dv" >
+
+		<h2 style="border-style: dashed; border-color: blue">Multiplication</h2>
+<input  class="text" id="t1" type="text" name="text1" placeholder="Enter Number...">
+</br>
+</br>
+<button  Class="button" onclick="my()">GET TABLE</button>
+<p id="p1"></p>
+<script>
+function my()
+{
+	var t1;
+	t1=parseInt(document.getElementById("t1").value);
+	//t2=parseInt(document.getElementById("t2").value);
+	var x=document.getElementById("p1");
+	var r=0;
+	for(var i=1;i<11;i++)
+	{
+		
+		
+		r=t1*i;
+		x.innerHTML=x.innerHTML+t1 + "x" + i + "=" + r+ "</br>";
+		
+	}
+	 
+
+
+}
+</script>
+</div>
+
+</body>
+</html>
